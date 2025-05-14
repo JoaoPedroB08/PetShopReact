@@ -1,33 +1,23 @@
-import React from 'react'
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import Banner01 from '../imagens/Banner01.jpg'
-import banner from '../imagens/banner.jpg'
-import banhoeTosa from '../imagens/banho-tosa.jpg'
+import bannerUm from '../imagens/Banner01.jpg';
+import bannerDois from '../imagens/banner.jpg';
+import bannerTres from '../imagens/banhoeTosa.png'
 
 function Banner() {
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <img src={Banner01} alt='Primeiro banner'/>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-            <img src={banner} alt='segundo banner'/>
-        </Carousel.Caption>
+    <Carousel className="carrosel">
+      <Carousel.Item>
+        <img src={bannerUm} className="d-block w-100" alt="Banner 1" />
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-            <img src={banhoeTosa} alt='Primeiro banner'/>
-        </Carousel.Caption>
+        <img src={bannerDois} className="d-block w-100" alt="Banner 2" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={bannerTres} className="d-block w-100" alt="Banner 3" />
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }
 
-export default Banner
+export default Banner;
