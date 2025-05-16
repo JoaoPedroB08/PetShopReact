@@ -54,8 +54,64 @@
 }
 
 .tituloSection {
-	background-color: #666;
+	background-color: #bebebe;
 	padding: 3%;
 	text-align: center;
-	font-size: larger;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.imagem_cliente {
+	position: relative;
+	margin-left: 140%;
+	margin-top: -30%;
+	z-index: 0;
+}
+
+.txt_clientes{
+	position: relative;
+	z-index: 1;
+	color: #666;
+	font-weight: 200;
+	margin-right: -20%;
+}
+
+.titulo_cliente {
+	padding-top: 5%;
+	padding-bottom: 3%;
+	
+}
+
+.img_Delivery {
+	z-index: 0;
+	padding-left: 4%;
+	
+}
+
+.atendimento_txt {
+	width: 47%;
+	height: 100%;
+	position: relative;
+	background-color: rgb(193, 221, 34);
+	z-index: 1;
+	padding-top: 5%;
+	font-weight: bolder;
+	color: black;
+}
+
+.delivery {
+	padding-top: 5%;
+	padding-bottom: 3%;
+	display: flex;
+}
+
+.delivery_titulo {
+	color: black;
+	font-size: 300%;
+	padding-top: 2%;
+	font-weight: bold;
+}
+
+.titulo_delivery {
+	font-size: 200%;
 }
