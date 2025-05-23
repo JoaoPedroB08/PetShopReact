@@ -115,3 +115,19 @@
 .titulo_delivery {
 	font-size: 200%;
 }
+
+.formularioCol {
+	background-color: gray;
+	padding: 2% 2%;
+}
+
+.forms {
+	display: grid;
+}
+
+.mensagemForms::placeholder {
+	position: absolute;
+    top: 0;
+	left: 0;
+	height: 2000px;
+}
