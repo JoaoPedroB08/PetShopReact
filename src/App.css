@@ -1,3 +1,12 @@
+/*-------------------{Body}------------------- */
+
+body {
+    overflow-x: hidden !important; 
+    width: 100%; 
+}
+
+/*-------------------{Menu}------------------- */
+
 .logo img{
 	height: 100px;
 }
@@ -23,6 +32,8 @@
 	opacity: 0.7;
 }
 
+/*-------------------{Banner}------------------- */
+
 .carrosel .carousel-item{
 	height: 750px;
 	overflow: hidden;
@@ -34,6 +45,8 @@
 	object-fit: cover;
 	object-position: center;
 }
+
+/*-------------------{Serviço}------------------- */
 
 .servico img{
 	width: 100%;
@@ -61,11 +74,12 @@
 	font-weight: bold;
 }
 
+/*-------------------{Cliente}------------------- */
+
 .imagem_cliente {
 	position: relative;
-	margin-left: 140%;
-	margin-top: -30%;
-	z-index: 0;
+	
+	margin-left: 25%;
 }
 
 .txt_clientes{
@@ -82,14 +96,16 @@
 	
 }
 
+/*-------------------{Delivery}------------------- */
+
 .img_Delivery {
 	z-index: 0;
 	padding-left: 4%;
-	
+	max-width: 60%;
 }
 
 .atendimento_txt {
-	width: 47%;
+	width: 42%;
 	height: 100%;
 	position: relative;
 	background-color: rgb(193, 221, 34);
@@ -116,18 +132,176 @@
 	font-size: 200%;
 }
 
-.formularioCol {
-	background-color: gray;
-	padding: 2% 2%;
-}
+/*-------------------{Footer}------------------- */
 
+.footer-wrapper {
+	background-color: #3e3e3e; 
+	color: #cccccc; 
+	padding: 40px 0;
+	font-family: Arial, sans-serif; 
+  }
+
+.tituloFooter {
+	color: white;
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	margin-left: 50%;
+}
+  
+  
 .forms {
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+  
+.forms input[type="text"],
+.forms input[type="email"],
+.forms textarea {
+	width: 100%;
+	padding: 12px 10px;
+	border: 1px solid #555;
+	background-color: white;
+	color: #333;
+	border-radius: 0;
+	box-sizing: border-box;
+	font-size: 0.9rem;
+}
+  
+.forms input[type="text"]::placeholder,
+.forms input[type="email"]::placeholder,
+.forms textarea::placeholder {
+	color: #888;
+	font-style: normal;
+}
+  
+.forms textarea.mensagemForms {
+	min-height: 120px;
+	resize: vertical;
+}
+  
+.button-wrapper {
+	text-align: right; 
+	margin-top: 15px; 
 }
 
-.mensagemForms::placeholder {
-	position: absolute;
-    top: 0;
-	left: 0;
-	height: 2000px;
+.botaoAgora {
+	background-color: #2a2a2a;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 0;
+	display: inline-block;
+	text-transform: none;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+.botaoAgora:hover {
+	background-color: #1a1a1a;
+}
+
+.contact-info-col {
+	padding-left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 45px;
+}
+  
+.contact-details p {
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+	line-height: 1.4;
+	color: #e0e0e0;
+}
+  
+.contact-details svg {
+	margin-right: 10px;
+	font-size: 1.1rem;
+	color: #e0e0e0;
+}
+  
+.social-icons {
+	margin-top: 20px;
+}
+  
+.social-icons a {
+	color: #e0e0e0;
+	margin-right: 15px;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+  
+.social-icons a:last-child {
+	margin-right: 0;
+}
+  
+.social-icons a:hover {
+	color: #ffffff;
+}
+
+/*-------------------{Rotulo}------------------- */
+
+.RotuloNome {
+	background-color: #2a2a2a;
+	max-width: 20%;
+	margin-left: 1%;
+}
+
+.RotuloNome h1{
+	font-size: x-large;
+	color: white;
+	margin: 5% 5%;
+	padding: 2% 0%;
+}
+
+/*-------------------{ContentLeft}------------------- */
+
+.img_ContentLeft {
+	max-width: 100%;
+	max-height: 80%;
+	margin-top: 3%;
+	margin-left: 40%;
+}
+
+.espaco_coluna p{
+	margin-top: 3%;
+	margin-right: 20%;
+}
+
+.saibaMais {
+	background-color: #2a2a2a;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	padding: 0% 5%;
+}
+
+/*-------------------{ContentRotuloRight}------------------- */
+
+.espaco_colunaRight p{
+	margin-top: 3%;
+	margin-left: 10%;
+}
+
+.img_ContentRight {
+	display: flex;
+	max-width: 100%;
+	max-height: 80%;
+	margin-top: 3%;
+}
+
+.saibaMaisRight {
+	background-color: #2a2a2a;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	padding: 0% 5%;
+	margin-left: 10%;
+	margin-bottom: 5%;
 }

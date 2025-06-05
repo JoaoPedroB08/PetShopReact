@@ -1,9 +1,10 @@
 import React from "react";
+import Rotulo from "../components/Rotulo";
 
 const Adestramento = () => {
 	return (
 		<div>
-			<h1>Adestramento</h1>
+			<Rotulo textRotulo='Adestramento' />
 		</div>
 	);
 };

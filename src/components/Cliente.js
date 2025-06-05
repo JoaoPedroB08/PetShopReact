@@ -1,14 +1,21 @@
 import React from 'react'
 import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row';
 
 function Cliente(props) {
     return (
-      <Col lg="" md="6" sm="12">
+      <Row>
+        <Col lg="6" md="6" sm="12">
           <h2 className='titulo_cliente'>{ props.tituloCliente }</h2>
           <h4 className='txt_clientes'>{ props.textCliente }</h4>
+        </Col>
+
+        <Col>
           <img className='imagem_cliente' src={ props.imagemCliente } alt={ props.tituloCliente } />
-      </Col>
+        </Col>
+      </Row>
+      
     )
   }
 
-export default Cliente
+export default Cliente;

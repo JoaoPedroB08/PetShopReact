@@ -13,4 +13,4 @@ function Delivery(props) {
   )
 }
 
-export default Delivery
+export default Delivery;
