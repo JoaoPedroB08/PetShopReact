@@ -305,3 +305,77 @@ body {
 	margin-left: 10%;
 	margin-bottom: 5%;
 }
+
+/*-------------------{Adestramento}------------------- */
+
+.img_bannerAd {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 1. Bloco para centralizar o texto */
+.text_block_centered {
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px;   /* Define uma largura máxima para o bloco de texto */
+    margin: 2rem auto;  /* Centraliza o bloco na página (em cima/baixo, auto nas laterais) */
+}
+
+/* 2. O container da galeria */
+.gallery_wrapper {
+    display: flex;             /* Coloca as imagens em linha */
+    justify-content: center;   /* Centraliza o GRUPO de imagens na página */
+    flex-wrap: wrap;           /* Permite que as imagens quebrem a linha em telas menores */
+    gap: 20px;                 /* Espaço entre cada imagem */
+    padding-bottom: 3rem;      /* Espaço abaixo da galeria */
+}
+
+/* 3. A classe para PADRONIZAR todas as imagens */
+.gallery_img_standard {
+    width: 180px;  /* LARGURA FIXA */
+    height: 180px; /* ALTURA FIXA */
+    object-fit: cover; /* ISSO É MÁGICA: Preenche o espaço sem distorcer a imagem (ela corta o excesso) */
+    border: 3px solid #eee;
+}
+
+
+/* --- Estilos do FAQ (mantidos iguais) --- */
+
+.faq_wrapper {
+    background-color: #f0f0f0;
+    padding: 3rem 0;
+}
+
+.faq_title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.accordion-item {
+    margin-bottom: 8px;
+    border: none;
+}
+
+.accordion-header .accordion-button {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #5a6268;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-body {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+}
